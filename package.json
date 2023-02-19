@@ -17,6 +17,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/riscv/riscv-gnu-toolchain"
+    "url": "https://github.com/xpack-dev-tools/riscv-none-elf-gcc-xpack"
   }
 }
