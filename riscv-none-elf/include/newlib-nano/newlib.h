@@ -34,7 +34,7 @@
 #define _WANT_REENT_SMALL 1
 
 /* Verify _REENT_CHECK macros allocate memory successfully. */
-#define _REENT_CHECK_VERIFY 1
+/* #undef _REENT_CHECK_VERIFY */
 
 /* Multibyte supported */
 /* #undef _MB_CAPABLE */

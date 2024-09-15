@@ -53,7 +53,7 @@ if [ x$1 != x ] ; then
   prefix=$1
   shift
 else
-  prefix=/Host/home/yyyy/Work/riscv-none-elf-gcc-12.2.0-1/win32-ia32/install/riscv-none-elf-gcc
+  prefix=/Host/home/wch/Work/riscv-none-elf-gcc-12.2.0-1/win32-ia32/install/riscv-none-elf-gcc
 fi
 
 # Allow for alternate isysroot in which to find headers

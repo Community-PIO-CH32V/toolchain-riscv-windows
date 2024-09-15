@@ -2488,7 +2488,7 @@ function build_cross_newlib()
 
             config_options+=("--enable-newlib-io-long-long") # Arm, AArch64
             config_options+=("--enable-newlib-mb") # Arm, AArch64
-            config_options+=("--enable-newlib-reent-check-verify") # Arm, AArch64
+            config_options+=("--disable-newlib-reent-check-verify") # Arm, AArch64
 
             config_options+=("--enable-newlib-register-fini") # Arm
 
@@ -2531,7 +2531,7 @@ function build_cross_newlib()
             config_options+=("--enable-newlib-global-atexit") # Arm
             config_options+=("--enable-newlib-nano-formatted-io") # Arm
             config_options+=("--enable-newlib-nano-malloc") # Arm
-            config_options+=("--enable-newlib-reent-check-verify") # Arm
+            config_options+=("--disable-newlib-reent-check-verify") # Arm
             config_options+=("--enable-newlib-reent-small") # Arm
 
             config_options+=("--enable-newlib-retargetable-locking") # Arm
@@ -3148,7 +3148,7 @@ function test_cross_gcc()
         specs="-specs=rdimon.specs"
       elif [ "${GCC_TARGET}" == "riscv-none-elf" ]
       then
-        specs="-specs=semihost.specs"
+        specs="-specs=nosys.specs"
       else
         specs="-specs=nosys.specs"
       fi

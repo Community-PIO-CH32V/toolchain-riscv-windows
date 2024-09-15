@@ -7,7 +7,7 @@ OUTPUT_FORMAT("elf64-bigriscv", "elf64-bigriscv",
 	      "elf64-bigriscv")
 OUTPUT_ARCH(riscv)
 ENTRY(_start)
-SEARCH_DIR("/Host/home/yyyy/Work/riscv-none-elf-gcc-12.2.0-1/linux-ia32/install/riscv-none-elf-gcc/riscv-none-elf/lib");
+SEARCH_DIR("/Host/home/wch/Work/riscv-none-elf-gcc-12.2.0-1/linux-ia32/install/riscv-none-elf-gcc/riscv-none-elf/lib");
 SECTIONS
 {
   /* Read-only sections, merged into text segment: */

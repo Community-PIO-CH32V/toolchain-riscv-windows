@@ -86,7 +86,8 @@ function build_versions()
           rv32ec-ilp32e-- \
           rv32ecxw-ilp32e-- \
           rv32emac-ilp32e-- \
-          rv32emc-ilp32e-- \
+          rv32ec_zmmul-ilp32e-- \
+          rv32ecxw_zmmul-ilp32e-- \
           \
           rv32i-ilp32-- \
           rv32ia-ilp32-- \
@@ -102,8 +103,10 @@ function build_versions()
           rv32ifdc-ilp32d-- \
           rv32im-ilp32-- \
           rv32ima-ilp32-- \
+          rv32imc_zba_zbb_zbc_zbs-ilp32-- \
           rv32imac_zba_zbb_zbc_zbs-ilp32-- \
           rv32imacxw-ilp32-- \
+          rv32imc_zba_zbb_zbc_zbs_xw-ilp32-- \
           rv32imac_zba_zbb_zbc_zbs_xw-ilp32-- \
           rv32imaf-ilp32f-- \
           rv32imafc-ilp32f-- \
@@ -325,7 +328,7 @@ function build_versions()
           build_libxcrypt "4.4.28"
 
           # https://www.openssl.org/source/
-          build_openssl "1.1.1q" # "1.1.1n"
+      #    build_openssl "1.1.1q" # "1.1.1n"
 
           build_python3 "${PYTHON3_VERSION}"
 

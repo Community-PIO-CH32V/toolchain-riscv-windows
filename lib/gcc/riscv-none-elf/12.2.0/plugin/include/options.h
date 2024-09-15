@@ -47,6 +47,12 @@ extern int riscv_zk_subext;
 #define riscv_zk_subext global_options.x_riscv_zk_subext
 #endif
 #ifdef GENERATOR_FILE
+extern int riscv_zmmul_subext;
+#else
+  int x_riscv_zmmul_subext;
+#define riscv_zmmul_subext global_options.x_riscv_zmmul_subext
+#endif
+#ifdef GENERATOR_FILE
 extern int riscv_zvl_flags;
 #else
   int x_riscv_zvl_flags;
@@ -8466,8 +8472,9 @@ struct GTY(()) cl_target_option
   int x_riscv_zb_subext;
   int x_riscv_zi_subext;
   int x_riscv_zk_subext;
+  int x_riscv_zmmul_subext;
   int x_riscv_zvl_flags;
-  /* 7 members */
+  /* 8 members */
   unsigned HOST_WIDE_INT explicit_mask[1];
   /* - */ int explicit_mask_target_flags;
 };
