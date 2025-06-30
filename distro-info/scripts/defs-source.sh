@@ -19,7 +19,7 @@
 APP_NAME=${APP_NAME:-"GNU RISC-V Embedded GCC"}
 
 # Used as part of file/folder paths.
-APP_LC_NAME=${APP_LC_NAME:-"riscv-none-elf-gcc"}
+APP_LC_NAME=${APP_LC_NAME:-"riscv-wch-elf-gcc"}
 
 DISTRO_NAME=${DISTRO_NAME:-"xPack"}
 DISTRO_LC_NAME=${DISTRO_LC_NAME:-"xpack"}
@@ -37,7 +37,7 @@ APP_DESCRIPTION="${DISTRO_NAME} ${APP_NAME}"
 
 BUGURL=${BUGURL:-"https://github.com/sifive/freedom-tools/issues/"}
 
-GCC_TARGET=${GCC_TARGET:-"riscv-none-elf"}
+GCC_TARGET=${GCC_TARGET:-"riscv-wch-elf"}
 GCC_ARCH=${GCC_ARCH:-"rv32imac"}
 GCC_ABI=${GCC_ABI:-"ilp32"}
 

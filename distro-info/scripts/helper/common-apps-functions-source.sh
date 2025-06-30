@@ -2297,7 +2297,7 @@ function build_cross_gcc_first()
               config_options+=("--enable-multilib") # Arm
               config_options+=("--with-multilib-list=${GCC_MULTILIB_LIST}")  # Arm
             fi
-          elif [ "${GCC_TARGET}" == "riscv-none-elf" ]
+          elif [ "${GCC_TARGET}" == "riscv-wch-elf" ]
           then
             config_options+=("--with-abi=${GCC_ABI}")
             config_options+=("--with-arch=${GCC_ARCH}")
@@ -2898,7 +2898,7 @@ function build_cross_gcc_final()
               config_options+=("--enable-multilib") # Arm
               config_options+=("--with-multilib-list=${GCC_MULTILIB_LIST}")  # Arm
             fi
-          elif [ "${GCC_TARGET}" == "riscv-none-elf" ]
+          elif [ "${GCC_TARGET}" == "riscv-wch-elf" ]
           then
             config_options+=("--with-abi=${GCC_ABI}")
             config_options+=("--with-arch=${GCC_ARCH}")
@@ -3146,7 +3146,7 @@ function test_cross_gcc()
       elif [ "${GCC_TARGET}" == "aarch64-none-elf" ]
       then
         specs="-specs=rdimon.specs"
-      elif [ "${GCC_TARGET}" == "riscv-none-elf" ]
+      elif [ "${GCC_TARGET}" == "riscv-wch-elf" ]
       then
         specs="-specs=nosys.specs"
       else
