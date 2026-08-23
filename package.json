@@ -1,0 +1,23 @@
+{
+  "name": "toolchain-riscv",
+  "version": "15.20200.260823",
+  "description": "WCH GNU toolchain for RISC-V (GCC 15.2.0), including GCC and newlib",
+  "keywords": [
+    "build tools",
+    "compiler",
+    "assembler",
+    "linker",
+    "preprocessor",
+    "risc-v",
+    "wch",
+    "ch32"
+  ],
+  "license": "GPL-2.0-or-later",
+  "system": [
+    "windows_amd64"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Community-PIO-CH32V/toolchain-riscv-windows"
+  }
+}
